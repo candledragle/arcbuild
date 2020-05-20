@@ -1,7 +1,7 @@
 name: android-arm
 on:
   push:
-    branches: [ test ]
+    branches: [ build-opencv ]
 jobs:
   android-armv7:
     runs-on: ubuntu-latest
