@@ -13,6 +13,6 @@ jobs:
     - name: configure
       run: cmake -S opencv -B build -P arcbuild.cmake -DROOT=$ANDROID_HOME/ndk-bundle -DPLATFORM=android -DARCH=armv7-a
     - name: build
-      run: cmake --build build -j2
+      run: cmake --build build
     - name: check
       run: sudo apt-get -y install tree && tree build/install 
